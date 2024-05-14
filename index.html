@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Desgin</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="active">
+    <div class="model">
+        <h2>Pop Up Model</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio reiciendis laudantium asperiores, voluptatum cupiditate molestias, suscipit ratione nesciunt, pariatur eius voluptates voluptatem rerum deleniti aliquid consequuntur molestiae incidunt fugiat. Deleniti, hic blanditiis impedit dicta voluptatum voluptas atque tempore aliquid rerum magnam velit totam sequi eum ex, ad dolorem suscipit pariatur.</p>
+        <div class="btn-model">Close</div>
+    </div>
+    <div class="btn clickMe">
+        click me
+    </div>
+</body>
+<script>
+    let body= document.querySelector("body");
+    let btnmodel= document.querySelector(".btn-model");
+    let clickMebtn=document.querySelector(".clickMe");
+    clickMebtn.addEventListener("click", function(){
+        body.classList.add("active");
+    })
+    btnmodel.addEventListener("click",function(){
+        body.classList.remove("active");
+    })
+
+</script>
+</html>

@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: all 0.5s;
+}
+.btn{
+    width: 12%;
+    height: 7vh;
+    border-radius: 50px;
+    border: 2px solid greenyellow;
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1.5s;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    transform: scale(1.0);
+    color: white;
+    background-color: greenyellow;
+}
+.model{
+    width: 45%;
+    height: 40vh;
+    background-color: salmon;
+    color: black;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    animation: show 1.5s;
+}
+@keyframes show{
+    0%{
+        transform: translateY(-99%);
+    }
+    99%{
+        transform: translateY(0%);
+    }
+}
+p{
+    margin-top: 3%;
+}
+.btn-model{
+    width: 20%;
+    height: 6vh;
+    margin-top: 5%;
+    border-radius: 50px;
+    border: 2px solid black;
+    color: rgb(124, 123, 123);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1.5s;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn-model:hover{
+    transform: scale(1.0);
+    color: white;
+    background-color: rgb(61, 50, 50);
+}
+.active{
+    background-color: rgb(255, 165, 155);
+}
+.active .model{
+    display: flex;
+}
+.active .clickMe{
+    display: none;
+}
